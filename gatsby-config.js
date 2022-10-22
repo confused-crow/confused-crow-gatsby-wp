@@ -27,10 +27,11 @@ module.exports = {
        */
       resolve: `gatsby-source-wordpress`,
       options: {
+        url: "http://195.133.144.65/wp/index.php?graphql",
         // the only required plugin option for WordPress is the GraphQL url.
-        url:
-          process.env.WPGRAPHQL_URL ||
-          `https://wpgatsbydemo.wpengine.com/graphql`,
+//         url:
+//           process.env.WPGRAPHQL_URL ||
+//           `https://wpgatsbydemo.wpengine.com/graphql`,
       },
     },
 
