@@ -3,6 +3,8 @@ name: ConfusedCrow CI
 on:
   push:
     branches: [ "main" ]
+  repository_dispatch:
+    types: ["publish"]
 
 jobs:
   build-and-deploy:
